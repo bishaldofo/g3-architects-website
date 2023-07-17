@@ -115,6 +115,8 @@ main{
    padding: 50px 130px;
 }
 
+/* quick list style  */
+
 .quick-list-container{
    display: flex;
    align-items: center;
@@ -144,6 +146,78 @@ main{
    color: #FF900E;
    font-weight: 700;
 }
+
+/* features style  */
+
+.features-container{
+   display: flex;
+   align-items: center;
+   gap: 70px;
+   padding: 100px 0;
+}
+
+.features-title-border{
+   border-left: 5px solid #FF900E;
+   padding-left: 15px;
+}
+
+.features-content{
+}
+
+.features-card {
+   padding: 15px;
+   border-radius: 8px;
+   background: #FFF;
+   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+   margin-bottom: 20px;
+}
+
+.feature-title{
+   color: #131313;
+   font-size: 1.4rem;
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.feature-description{}
+
+.features-image{
+   position: relative;
+   padding-left: 50px;
+}
+
+.features-image img{
+   max-width: 650px;
+}
+
+.experience{
+   display: inline-block;
+   border-radius: 8px;
+   background: #FF900E;
+   padding: 45px;
+   position: absolute;
+   left: -5%;
+   bottom: -8%;
+   text-align: center;
+}
+
+.experience span{
+   color: #FFF;
+   text-align: center;
+   font-size: 4rem;
+   font-weight: 700;
+   line-height: 70px;
+}
+
+.experience p{
+   color: #FFF;
+   font-size: 1.25rem;
+   font-weight: 500;
+   line-height: 40px;
+}
+
+
+
 
 
 
@@ -211,6 +285,31 @@ main{
       gap: 30px;
    }
 
+   .features-container{
+      padding: 50px 0;
+      flex-direction: column-reverse;
+      gap: 50px;
+   }
+
+   .features-image {
+      padding-left: 0;
+   }
+
+   .features-image img{
+      width: 100%;
+   }
+
+   .experience {;
+      left: 0;
+      bottom: 0;
+      padding: 15px;
+  }
+
+  .features-card {
+      padding: 20px;
+      margin-bottom: 20px;
+   }
+
 }
 
 /* medium device */
@@ -254,11 +353,58 @@ main{
       flex-direction: column;
       gap: 30px;
    }
+
+   .features-container{
+      padding: 50px 0;
+      flex-direction: column-reverse;
+      gap: 50px;
+   }
+
+   .features-image {
+      padding-left: 0;
+   }
+
+   .features-image img{
+      width: 100%;
+   }
+
+   .experience {;
+      left: 0;
+      bottom: 0;
+      padding: 15px;
+  }
+
+  .features-card {
+      padding: 20px;
+      margin-bottom: 20px;
+   }
 }
 
 /* medium device */
 @media screen and (min-width:961px) and (max-width:1400px) {
    .quick-list-container {
       flex-direction: column;
-  }
+   }
+
+   .features-container{
+      padding: 50px 0;
+      flex-direction: column-reverse;
+      gap: 50px;
+   }
+
+   .features-image {
+      padding-left: 0;
+   }
+   
+   .experience {;
+      left: 0;
+      bottom: 0;
+      padding: 15px;
+   }
+
+   .features-card {
+      padding: 20px;
+      margin-bottom: 20px;
+   }
+  
 }
