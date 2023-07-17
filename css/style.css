@@ -1,0 +1,175 @@
+/* shared style  */
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   font-family: 'Work Sans', sans-serif;
+}
+
+a{
+   text-decoration: none;
+}
+
+.primary-btn{
+   color: #FFF;
+   font-size: 20px;
+   font-weight: 600;
+   border-radius: 8px;
+   background: #FF900E;
+   padding: 20px 25px;
+   border: 0;
+}
+
+/* header start  */
+header{
+   background-color: rgba(255, 144, 14, 0.10);
+   padding: 0 130px;
+}
+
+.header-container{
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 50px;
+}
+
+nav .logo a{
+   color: #131313;
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+nav> ul{
+   display: flex;
+}
+
+nav ul li{
+   list-style: none;
+   margin-right: 50px;
+}
+
+nav ul li:last-child{
+   margin-right: 0;
+}
+
+nav ul li a {
+   color: #424242;
+   font-size: 1rem;
+   font-weight: 500;
+   line-height: 26px;
+}
+
+.banner-container{
+   display: block;
+}
+
+.banner-content-wrapper {
+   max-width: 862px;
+   margin: 0 auto;
+   text-align: center;
+   margin-top: 100px;
+   margin-bottom: 50px;
+}
+
+.banner-title{
+   color: #131313;
+   font-size: 4rem;
+   font-weight: 700;
+}
+
+.banner-description{
+   color: #727272;
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 26px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.banner-container img{
+   width: 100%;
+}
+
+/* responsive media queries */
+@media screen and (max-width: 576.99px) {
+   header{
+      padding: 10px;
+   }
+
+   nav{
+      flex-direction: column;
+      padding-top: 0;
+   }
+
+   nav> ul{
+      margin-top: 15px;
+      margin-bottom: 25px;
+   }
+
+   nav .logo a{
+      font-size: 2.5rem;
+   }
+
+   nav ul li {
+      margin-right: 15px;
+   }
+
+   .banner-container {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 20px 0;
+   }
+
+   .banner-content-wrapper {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+
+   .banner-title {
+      font-size: 2rem;
+   }
+
+   .banner-title br{
+      display: none;
+   }
+}
+
+/* medium device */
+@media screen and (min-width:577px) and (max-width:960.99px) {
+   header{
+      padding: 20px;
+   }
+
+   nav{
+      padding-top: 10px;
+   }
+
+   nav .logo a {
+      font-size: 2rem;
+   }
+
+   .banner-container {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 20px 0;
+   }
+
+   .banner-content-wrapper {
+      width: 90%;
+      margin: 20px auto;
+   }
+
+   .banner-title {
+      font-size: 2rem;
+   }
+
+   nav ul li {
+      margin-right: 30px;
+   }
+}
