@@ -285,12 +285,6 @@ footer{
 }
 
 
-
-
-
-
-
-
 /* responsive media queries */
 @media screen and (max-width: 576.99px) {
    .section-title {
@@ -367,7 +361,7 @@ footer{
       width: 100%;
    }
 
-   .experience {;
+   .experience {
       left: 0;
       bottom: 0;
       padding: 15px;
@@ -398,6 +392,7 @@ footer{
 
    footer{
       padding: 20px;
+      padding-bottom: 0;
    }
 
 }
@@ -458,7 +453,7 @@ footer{
       width: 100%;
    }
 
-   .experience {;
+   .experience {
       left: 0;
       bottom: 0;
       padding: 15px;
@@ -483,8 +478,9 @@ footer{
 
    footer{
       padding: 20px;
+      padding-bottom: 0;
    }
-   
+
 }
 
 /* medium device */
@@ -503,7 +499,7 @@ footer{
       padding-left: 0;
    }
 
-   .experience {;
+   .experience {
       left: 0;
       bottom: 0;
       padding: 15px;
